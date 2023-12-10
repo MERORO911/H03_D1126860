@@ -1,0 +1,11 @@
+{% extends 'master.html' %}
+
+{% block content %}
+<p><a href="/">HOME</a></p>
+
+<h2>{{ court.name }} 詳細信息</h2>
+<p>球場名稱: {{ court.name }}</p>
+<p>球場型態: {{ court.get_court_type_display }}</p>
+<p>所在城市: {{ court.city }}</p>
+<p>Back to <a href="/court">Court</a></p>
+{% endblock %}
